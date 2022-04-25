@@ -83,6 +83,26 @@ namespace Linked_List
             }
         }
 
+        public void DeleteLast()
+        {
+            Node temp = head;
+            if(head == null)
+            {
+                Console.WriteLine("Linked_List is empty.");
+            }
+            else if(head.next == null)
+            {
+                head = null;
+            }
+            while(temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+            int delLast = temp.next.data;
+            temp.next = null;
+            Console.WriteLine("{0} is Deleted from Linked-List.", delLast);
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");

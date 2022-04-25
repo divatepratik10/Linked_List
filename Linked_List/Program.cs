@@ -11,7 +11,8 @@ namespace Linked_List
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Data Structure Programme.");
-            Console.WriteLine("Choose any one method\n0 : Basic Linked list (Built-In)\n1 : Linked List\n2 : Delete First element of List");
+            Console.WriteLine("Choose any one method\n0 : Basic Linked list (Built-In)\n1 : Linked List\n2 : Delete First element of List" +
+                "\n3 : Delete Last element");
             int input = Convert.ToInt32(Console.ReadLine());
 
             switch(input)
@@ -44,6 +45,18 @@ namespace Linked_List
                     List.DeleteFirst();
                     Console.WriteLine("Elements in the Linked_List are : ");
                     List.Display();
+                    break;
+
+                case 3:
+                    CustomLinkedList List1 = new CustomLinkedList();
+                    List1.AddLast(30);
+                    List1.AddLast(70);
+                    Console.WriteLine("Elements in the Linked_List are : ");
+                    List1.AddFirst(56);
+                    List1.Display();
+                    List1.DeleteLast();
+                    Console.WriteLine("Elements in the Linked_List after deletion are : ");
+                    List1.Display();
                     break;
                 default:
                     Console.WriteLine("Enter a valid Input.");
