@@ -43,6 +43,11 @@ namespace Linked_List
             Console.WriteLine("{0} Node added to the Linked-List.", New_Node.data);
         }
 
+        public void Append(int Newnode)
+        {
+            AddLast(Newnode);
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");
