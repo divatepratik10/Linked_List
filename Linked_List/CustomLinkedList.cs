@@ -103,6 +103,24 @@ namespace Linked_List
             Console.WriteLine("{0} is Deleted from Linked-List.", delLast);
         }
 
+        public void Search(int value)
+        {
+            Node temp = this.head;
+            while(temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Element {0} is present in the linked list.", value);
+                }
+                else
+                {
+                    Console.WriteLine("Element {0} is not present in the linked list.", value);
+                }
+                temp = temp.next;
+              
+            }
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");

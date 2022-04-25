@@ -12,7 +12,7 @@ namespace Linked_List
         {
             Console.WriteLine("Welcome To Data Structure Programme.");
             Console.WriteLine("Choose any one method\n0 : Basic Linked list (Built-In)\n1 : Linked List\n2 : Delete First element of List" +
-                "\n3 : Delete Last element");
+                "\n3 : Delete Last element\n4 : Search Whether element is present in list or not");
             int input = Convert.ToInt32(Console.ReadLine());
 
             switch(input)
@@ -57,6 +57,16 @@ namespace Linked_List
                     List1.DeleteLast();
                     Console.WriteLine("Elements in the Linked_List after deletion are : ");
                     List1.Display();
+                    break;
+
+                case 4:
+                    CustomLinkedList List2 = new CustomLinkedList();
+                    List2.AddLast(30);
+                    List2.AddLast(70);
+                    List2.AddFirst(56);
+                    Console.WriteLine("Enter element to search if it is present in list or not : ");
+                    int value = Convert.ToInt32(Console.ReadLine());
+                    List2.Search(value);
                     break;
                 default:
                     Console.WriteLine("Enter a valid Input.");
