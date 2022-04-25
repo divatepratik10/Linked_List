@@ -69,6 +69,20 @@ namespace Linked_List
             Console.WriteLine("{0} Node Inserted to the Linked-List.", node.data);
         }
 
+        public void DeleteFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked-List is Empty.");
+            }
+            else
+            {
+                int delfirst = head.data;
+                head = head.next;
+                Console.WriteLine("{0} is Deleted from Linked-List.", delfirst);
+            }
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");
