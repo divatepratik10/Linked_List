@@ -35,6 +35,14 @@ namespace Linked_List
             return temp;
         }
 
+        public void AddFirst(int NewData)
+        {
+            Node New_Node = new Node(NewData);
+            New_Node.next = this.head;
+            this.head = New_Node;
+            Console.WriteLine("{0} Node added to the Linked-List.", New_Node.data);
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");

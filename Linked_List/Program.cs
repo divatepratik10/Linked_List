@@ -28,9 +28,10 @@ namespace Linked_List
                     break;
                 case 1:
                     CustomLinkedList LinkedList = new CustomLinkedList();
-                    LinkedList.AddLast(56);
-                    LinkedList.AddLast(30);
                     LinkedList.AddLast(70);
+                    //LinkedList.AddFirst(70);
+                    LinkedList.AddFirst(30);
+                    LinkedList.AddFirst(56);
                     LinkedList.Display();
                     break;
 
