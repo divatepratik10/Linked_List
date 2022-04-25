@@ -29,10 +29,10 @@ namespace Linked_List
                     break;
                 case 1:
                     CustomLinkedList LinkedList = new CustomLinkedList();
-                    LinkedList.AddLast(56);
-                    //LinkedList.Append(30);
+                    LinkedList.AddFirst(56);
+                    LinkedList.AddLast(30);
                     LinkedList.AddLast(70);
-                    LinkedList.Insert(2, 30);
+                    LinkedList.Insert(3, 40);
                     Console.WriteLine("Elements in the Linked_List are : ");
                     LinkedList.Display();
                     break;

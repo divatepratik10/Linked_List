@@ -63,6 +63,11 @@ namespace Linked_List
             else
             {
                 Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
                 node.next = temp.next;
                 temp.next = node;
             }
