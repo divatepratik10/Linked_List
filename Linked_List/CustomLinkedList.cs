@@ -126,6 +126,24 @@ namespace Linked_List
             }
         }
 
+        public void Delete(int data)
+        {
+            Node temp = head, previous = null;
+            if (temp != null && temp.data == data)
+            {
+                head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != data)
+            {
+                previous = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+                return;
+            previous.next = temp.next;
+        }
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");
