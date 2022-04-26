@@ -144,6 +144,8 @@ namespace Linked_List
             previous.next = temp.next;
         }
 
+        
+
         public void Display()
         {
             Console.WriteLine("Displying Linked-List nodes.");
